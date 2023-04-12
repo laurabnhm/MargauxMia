@@ -123,7 +123,7 @@ html, body {
 
 .img-rs:hover {
     cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.7;
     scale: 1.05;
-    transform: 1s;
+    transition: 0.2s;
 }
