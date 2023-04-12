@@ -5,13 +5,13 @@
 html, body {
     /*background-image: url(../img/background.jpg);*/
     background-color: rgb(201, 173, 226);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    background-position: center; /*centre l'image de fond*/
+    background-size: cover; /*l'image prend tout l'écran même si elle la taille de l'image n'est pas la même que celle de l'écran (permet de s'adapter à toutes les tailles d'écrans)*/
+    background-attachment: fixed; /*bloque l'imqge*/
+    overflow-x: hidden; /*bloque le scroll horizontal*/
+    box-sizing: border-box; /*l'image s'adapte aux bordures de l'écran*/
+    margin: 0; /*annnule les marges extérieures automatiques*/
+    padding: 0; /*annnule les marges intérieures automatiques*/
 }
 
 
@@ -21,47 +21,47 @@ html, body {
 
 
 .gabarit {
-    width: 100vw;
-    height: 100vh;
+    width: 100vw; /*la div gabarit fait la largeur de l'écran*/
+    height: 100vh; /*la div gabarit fait la hauteur de l'écran*/
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: flex; /*mode de disposition des éléments de la div*/
+    justify-content: center; /*centre le logo en hauteur*/
+    align-items: center; /*centre le logo en largeur*/
+    width: 100vw; /**/
+    height: 100vh; /**/
+    position: absolute; /*la div gabarit fait la largeur de l'écran*/
+    top: 0; /*la div commence bien en haut de l'écran*/
+    left: 0; /*la div commence bien à gauche de l'écran*/
 }
 
 .img-logo {
-    width: 50%;
+    width: 50%; /*taille du logo propotionel à la largeur de l'écran (pour la responsivité)*/
 }
 
 .rs {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 1vw;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    display: flex; /**/
+    flex-direction: column; /*aligne tes éléments en colonne*/
+    position: absolute; /**/
+    right: 1vw; /*positionne les rs avec une marge de 1% é droite de l'écran*/
+    align-items: center; /**/
+    justify-content: center; /**/
+    height: 100vh; /*permet de redéfinir la taille de la div pour être sûr que l'élément soit bien centré*/
 }
 
 .menu {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 1vw;
-    align-items: center;
-    justify-content: center;
+    width: 100vw; /**/
+    display: flex; /**/
+    flex-direction: column; /**/
+    position: absolute; /**/
+    bottom: 1vw; /**/
+    align-items: center; /**/
+    justify-content: center; /**/
 }
 
 .link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; /**/
+    justify-content: center; /**/
+    align-items: center; /**/
 }
