@@ -3,8 +3,7 @@
 /**********************************/
 
 html, body {
-    /*background-image: url(../img/background.jpg);*/
-    background-color: rgb(201, 173, 226);
+    background-image: url(../img/background.jpg);
     background-position: center; /*centre l'image de fond*/
     background-size: cover; /*l'image prend tout l'écran même si elle la taille de l'image n'est pas la même que celle de l'écran (permet de s'adapter à toutes les tailles d'écrans)*/
     background-attachment: fixed; /*bloque l'imqge*/
@@ -26,6 +25,19 @@ html, body {
 }
 
 .logo {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 7vh;
+}
+
+.img-logo {
+    width: 25vw;
+}
+
+.symbole {
     display: flex; /*mode de disposition des éléments de la div*/
     justify-content: center; /*centre le logo en hauteur*/
     align-items: center; /*centre le logo en largeur*/
@@ -36,8 +48,20 @@ html, body {
     left: 0; /*la div commence bien à gauche de l'écran*/
 }
 
-.img-logo {
-    width: 50%; /*taille du logo propotionel à la largeur de l'écran (pour la responsivité)*/
+.symbole-link {
+    display: flex; /**/
+    justify-content: center; /**/
+    align-items: center; /**/
+}
+
+.img-symbole {
+    width: 50vw; /*taille du logo propotionel à la largeur de l'écran (pour la responsivité)*/
+    animation: float-animation 4s ease-in-out infinite;
+        /*animation permet de créer une animation
+        float animation est le nom qu'on lui donne (pour le relier à ses paramètres plus bas)
+        4s est la durée de l'animation 
+        ease-in-out est le type de vitesse de l'animation
+        infinite sert à répéter à l'infini l'animation*/
 }
 
 .rs {
@@ -50,6 +74,23 @@ html, body {
     height: 100vh; /*permet de redéfinir la taille de la div pour être sûr que l'élément soit bien centré*/
 }
 
+.rs-link {
+    display: flex;
+    width: 55px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img-rs {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+}
+
+
 .menu {
     width: 100vw; /**/
     display: flex; /**/
@@ -60,8 +101,29 @@ html, body {
     justify-content: center; /**/
 }
 
-.link {
-    display: flex; /**/
-    justify-content: center; /**/
-    align-items: center; /**/
+.menu-link {
+    margin-bottom: 15px;
+}
+
+
+
+
+@keyframes float-animation {
+	0% {
+		transform: translatey(0px); /*translation en y de 0px par rapport à la position originale de l'image*/
+	}
+	50% {
+		transform: translatey(-20px); /*translation en y de 0px par rapport à la position originale de l'image*/
+	}
+	100% {
+		transform: translatey(0px); /*translation en y : l'image revient à sa position de base*/
+	}
+}
+
+
+.img-rs:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    scale: 1.05;
+    transform: 1s;
 }
