@@ -3,7 +3,7 @@
 /**********************************/
 
 html, body {
-    background-image: url(../img/background.jpg);
+    background-image: url(../img/background.jpg); /*lien de l'image de fond*/
     background-position: center; /*centre l'image de fond*/
     background-size: cover; /*l'image prend tout l'écran même si elle la taille de l'image n'est pas la même que celle de l'écran (permet de s'adapter à toutes les tailles d'écrans)*/
     background-attachment: fixed; /*bloque l'imqge*/
@@ -25,16 +25,16 @@ html, body {
 }
 
 .logo {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 7vh;
+    width: 100vw; /**/
+    display: flex; /**/
+    align-items: center; /**/
+    justify-content: center; /**/
+    position: absolute; /**/
+    top: 7vh; /*marge de 7% de la taille de l'écran en haut*/
 }
 
 .img-logo {
-    width: 25vw;
+    width: 25vw; /*le logo fait 25% de la taille de l'écran (s'adapte responsivement)*/
 }
 
 .symbole {
@@ -75,19 +75,19 @@ html, body {
 }
 
 .rs-link {
-    display: flex;
-    width: 55px;
-    height: 55px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    display: flex; /**/
+    width: 55px; /**/
+    height: 55px; /**/
+    align-items: center; /**/
+    justify-content: center; /**/
+    margin-top: 10px; /**/
+    margin-bottom: 10px; /**/
 }
 
 .img-rs {
-    width: 50px;
-    height: 50px;
-    opacity: 1;
+    width: 50px; /**/
+    height: 50px; /**/
+    opacity: 1; /*opacité de 1 (=100%) pour pouvoir la changer au hover*/
 }
 
 
@@ -102,11 +102,16 @@ html, body {
 }
 
 .menu-link {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /**/
+    font: italic 1.2em "Arial", sans-serif; /*Arial en italique sans-serif (em est une unité qui permet au texte d'être proportionnel)*/
+    text-decoration: none;
+    color: black;
 }
 
 
-
+/**********************************/
+/************ ANIMATION ***********/
+/**********************************/
 
 @keyframes float-animation {
 	0% {
@@ -121,9 +126,20 @@ html, body {
 }
 
 
+/**********************************/
+/************* HOVER **************/
+/**********************************/
+
 .img-rs:hover {
-    cursor: pointer;
-    opacity: 0.7;
-    scale: 1.05;
-    transition: 0.2s;
+    cursor: pointer; /*la souris se transforme en main*/
+    opacity: 0.7; /*l'opacité baisse à 70%*/
+    scale: 1.05; /*la taille augmente de 0.5%*/
+    transition: 0.3s; /*temps de l'animation*/
+}
+
+.menu-link:hover {
+    cursor: pointer; /*la souris se transforme en main*/
+    opacity: 0.8; /*l'opacité baisse à 70%*/
+    scale: 1.01; /*la taille augmente de 0.5%*/
+    transition: 0.2s; /*temps de l'animation*/
 }
