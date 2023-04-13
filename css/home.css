@@ -91,6 +91,12 @@ html, body {
 }
 
 
+.img-sound {
+    width: 10px; /**/
+    height: 10px; /**/
+    opacity: 1; /*opacité de 1 (=100%) pour pouvoir la changer au hover*/
+}
+
 .menu {
     width: 100vw; /**/
     display: flex; /**/
@@ -131,6 +137,13 @@ html, body {
 /**********************************/
 
 .img-rs:hover {
+    cursor: pointer; /*la souris se transforme en main*/
+    opacity: 0.7; /*l'opacité baisse à 70%*/
+    scale: 1.05; /*la taille augmente de 0.5%*/
+    transition: 0.3s; /*temps de l'animation*/
+}
+
+.img-sound:hover {
     cursor: pointer; /*la souris se transforme en main*/
     opacity: 0.7; /*l'opacité baisse à 70%*/
     scale: 1.05; /*la taille augmente de 0.5%*/
