@@ -1,5 +1,6 @@
 let sound_site = document.querySelector('.sound-file-site');
 let sound_logo = document.querySelector('.sound-file-logo');
+let sound_symbole = document.querySelector('.sound-file-symbole');
 
 
 
@@ -24,5 +25,13 @@ document.querySelector('.img-logo').addEventListener('click', playSoundLogo);
 
 function playSoundLogo() {
     sound_logo.play();
-    console.log('hey');
+}
+
+
+/*********** SON SYMBOLE ***********/
+
+document.querySelector('.img-symbole').addEventListener('click', playSoundSymbole);
+
+function playSoundSymbole() {
+    sound_symbole.play();
 }
