@@ -135,6 +135,10 @@ html, body {
 /************* HOVER **************/
 /**********************************/
 
+.img-logo:hover {
+    cursor: pointer; /*la souris se transforme en main*/
+}
+
 .img-rs:hover {
     cursor: pointer; /*la souris se transforme en main*/
     opacity: 0.7; /*l'opacité baisse à 70%*/

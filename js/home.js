@@ -20,8 +20,9 @@ function playSoundSite() {
 
 /*********** SON LOGO ***********/
 
-document.querySelector('.img-symbole').addEventListener('click', playSoundLogo);
+document.querySelector('.img-logo').addEventListener('click', playSoundLogo);
 
 function playSoundLogo() {
     sound_logo.play();
+    console.log('hey');
 }
