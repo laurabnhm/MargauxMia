@@ -90,13 +90,6 @@ html, body {
     opacity: 1; /*opacité de 1 (=100%) pour pouvoir la changer au hover*/
 }
 
-
-.img-sound {
-    width: 10px; /**/
-    height: 10px; /**/
-    opacity: 1; /*opacité de 1 (=100%) pour pouvoir la changer au hover*/
-}
-
 .menu {
     width: 100vw; /**/
     display: flex; /**/
@@ -112,6 +105,12 @@ html, body {
     font: italic 1.2em "Arial", sans-serif; /*Arial en italique sans-serif (em est une unité qui permet au texte d'être proportionnel)*/
     text-decoration: none;
     color: black;
+}
+
+.img-sound {
+    width: 20px; /**/
+    height: 20px; /**/
+    opacity: 1; /**/
 }
 
 
